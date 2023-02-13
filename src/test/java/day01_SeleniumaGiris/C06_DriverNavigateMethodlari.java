@@ -12,6 +12,7 @@ public class C06_DriverNavigateMethodlari {
         System.out.println("maximize size:" + driver.manage().window().getSize()); //maximize size:(1382, 744)
         System.out.println("maximize position:" + driver.manage().window().getPosition());//(-8, -8)
 
+
         driver.manage().window().fullscreen();
         System.out.println("fullscreen size :" + driver.manage().window().getSize() );//1366, 768)
         System.out.println("fullscreen psition :" + driver.manage().window().getPosition() ); //(0, 0)
