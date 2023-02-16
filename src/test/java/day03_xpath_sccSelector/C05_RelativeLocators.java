@@ -1,4 +1,4 @@
-package day03_xpath_cssSelector;
+package day03_xpath_sccSelector;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -30,12 +30,16 @@ public class C05_RelativeLocators {
                 2- locate edemediginiz webelement'e ait bir ozellik (tag, attribute)
          */
         WebElement berlin1=driver.findElement(RelativeLocator.with(By.tagName("img")).below(nycElementi));
+        //below :altinda demek
         System.out.println("berlin1 id : "+berlin1.getAttribute("id")); // pid7_thumb
 
         WebElement berlin2= driver.findElement(RelativeLocator.with(By.tagName("img")).toRightOf(bostonElementi));
         System.out.println("berlin2 id : "+berlin2.getAttribute("id")); // pid7_thumb
-
+//toright=saginda
         WebElement berlin3= driver.findElement(RelativeLocator.with(By.tagName("img")).above(sailorElementi));
         System.out.println("berlin3 id : "+berlin3.getAttribute("id")); // pid7_thumb
+//above=ustunde
+
+
     }
 }
