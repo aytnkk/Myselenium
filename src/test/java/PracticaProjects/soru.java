@@ -63,7 +63,7 @@ public class soru {
         // 6. Enter name and email address
 
         driver.findElement(By.xpath("//input[@data-qa='signup-name']")).sendKeys("ayten" + Keys.ENTER);
-        driver.findElement(By.xpath("(//input[@placeholder='Email Address'])[2]")).sendKeys("aydmkk2@gmail.com" + Keys.ENTER);
+        driver.findElement(By.xpath("(//input[@placeholder='Email Address'])[2]")).sendKeys("aydemkk2@gmail.com" + Keys.ENTER);
         // 7. Click 'Signup' button
 
     }
