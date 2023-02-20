@@ -1,4 +1,4 @@
-package day04_JUnitFramework;
+package day03_xpath_sccSelector.day04_JUnitFramework;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Test;

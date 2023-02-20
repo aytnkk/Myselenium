@@ -44,30 +44,29 @@ public class Q2 {
         driver.getCurrentUrl();
 
         // 7 - Title ve url'nin "OTTO" kelimesinin icerip icermedigini kontrol edelim
-        String expectedUrl="OTTO";
-        String actualUrl=driver.getCurrentUrl();
-        if (actualUrl.contains(expectedUrl)){
-            System.out.println("url testi passed");
-        }else{
-            System.out.println("url testi failed");
-        }
+        String expectedTitle= driver.getTitle();
+        System.out.println("expectedTitle = " + expectedTitle);
 
-        String expectedIcerik="OTTO";
-        String actualTitle=driver.getTitle();
-        if (actualTitle.contains(expectedIcerik)){
-            System.out.println("title testi passed");
-        }else{
-            System.out.println("title testi failed");
-        }
+        String actualUrl=driver.getCurrentUrl();
+        System.out.println("actualUrl = " + actualUrl);
+
+       if (expectedTitle.contains("OTTO") && actualUrl.contains("OTTO")){
+           System.out.println("OTTO yazisi vardir");
+       }else{
+           System.out.println("OTTO yazisi yoktur");
+       }
 
          //8 - Ardindan "https://wisequarter.com/" adresine gidelim
         driver.navigate().to("https://wisequarter.com");
 
         // 9 - Bu adresin basligini alalim ve "Quarter" kelimesini icerip icermedigini
         //     kontrol edelim
-        String expectedBaslik="Quarter";
         String actualTitle1=driver.getTitle();
-        if (actualTitle1.contains(expectedBaslik)){
+        System.out.println("actualTitle1 = " + actualTitle1);
+
+        boolean isTrue=actualTitle1.contains("Quarter");
+        //System.out.println(isTrue?"Test Passed":"Test Failed"); ternaary cozumu
+        if (isTrue){
             System.out.println("title testi passed");
         }else{
             System.out.println("title testi failed");

@@ -41,8 +41,7 @@ public class C06_MavenIlkClass {
         //6- Sayfadaki tum basliklari yazdiralim
         //   soldaki aramayi daraltabilecegimiz basliklar
         driver.navigate().back();
-        List<WebElement> baslikElementleriListesi=
-                driver.findElements(By.xpath("//a[@class='a-link-normal s-navigation-item']"));
+        List<WebElement> baslikElementleriListesi= driver.findElements(By.xpath("//a[@class='a-link-normal s-navigation-item']"));
         int baslikNo=1;
         for (WebElement eachElement: baslikElementleriListesi
         ) {

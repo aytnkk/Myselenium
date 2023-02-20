@@ -1,4 +1,4 @@
-package day04_JUnitFramework;
+package day03_xpath_sccSelector.day04_JUnitFramework;
 
 import org.junit.*;
 
