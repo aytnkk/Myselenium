@@ -16,6 +16,7 @@ public class C05_TestBaselIlkTest extends TestBase {
         // Nutella aratalim
         driver.findElement(By.id("twotabsearchtextbox"))
                 .sendKeys("Nutella" + Keys.ENTER);
+
         // Sonuclarin Nutella icerdigini test edelim
         WebElement actualSonucYaziElementi= driver.findElement(By.xpath("//h1[@class='a-size-base s-desktop-toolbar a-text-normal']"));
         String expectedIcerik= "Nutella";
