@@ -8,8 +8,8 @@ import java.nio.file.Paths;
 public class C04_FilePath {
     @Test
     public void test01(){
-                // C:\Users\Ayten\Desktop\delta
-         //C:\Users\Ayten\Desktop\seleniumteam108\src\test\java\day07_ActionsClass_fileTestleri\C06_FileExistTesti.java
+        // C:\Users\Ayten\Desktop\delta
+        // C:\Users\Ayten\Desktop\seleniumteam108\src\test\java\day07_ActionsClass_fileTestleri\C06_FileExistTesti.java
           /*
             Bilgisayarimizda bir dosyanin var oldugunu test etmek icin
             dosya yoluna ihtiyacimiz var
@@ -26,7 +26,7 @@ public class C04_FilePath {
 
         System.out.println(System.getProperty("user.home"));
        dosyaYolu= "C:\\Users\\Ayten\\Desktop\\delta";
-       dosyaYolu=System.getProperty("user.home")+"/Desktop/delta";
+       dosyaYolu=System.getProperty("user.home")+"\\Desktop\\delta";
 
         System.out.println(System.getProperty("user.dir"));
         //C:\Users\Ayten\Desktop\seleniumteam108

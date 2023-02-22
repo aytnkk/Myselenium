@@ -37,7 +37,7 @@ public class utomationexercise extends TestBase {
         WebElement name= driver.findElement(By.xpath("//input[@data-qa='signup-name']"));
         name.sendKeys("adem");
         WebElement email= driver.findElement(By.xpath("//input[@data-qa='signup-email']"));
-        email.sendKeys("ayten129894k@gmail.com");
+        email.sendKeys("ayten929894kk@gmail.com");
         //7. Click 'Signup' button
         WebElement signUpButton= driver.findElement(By.xpath("//button[@data-qa='signup-button']"));
         signUpButton.click();
@@ -86,6 +86,7 @@ public class utomationexercise extends TestBase {
         //13. Click 'Create Account button'
         //14. Verify that 'ACCOUNT CREATED!' is visible
         Thread.sleep(5000);
+
         WebElement accountCreated=driver.findElement(By.xpath("//*[@id=\"form\"]/div/div/div/h2/b"));
         Assert.assertTrue(accountCreated.isDisplayed());
         //15. Click 'Continue' button
@@ -93,6 +94,7 @@ public class utomationexercise extends TestBase {
         devamEtme.click();
         //16. Verify that 'Logged in as username' is visible
         Thread.sleep(5000);
+        driver.switchTo().window(driver.getWindowHandle());
         WebElement logged = driver.findElement(By.xpath("//a[text()=' Logged in as ']"));
         Assert.assertTrue(logged.isDisplayed());
         //17. Click 'Delete Account' button

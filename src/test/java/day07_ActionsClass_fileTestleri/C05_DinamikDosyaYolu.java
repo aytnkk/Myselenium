@@ -9,13 +9,8 @@ import java.nio.file.Paths;
 public class C05_DinamikDosyaYolu {
     @Test
     public void test01(){
-        // Calistigimiz package icerisinde
-        // text.txt isimli bir file oldugunu test edin
-
-        String dinamikDosyaYolu = System.getProperty("user.dir")
-                +"/src/test/java/day07_ActionsClass_fileTestleri/text.txt";
-
-
-        Assert.assertTrue(Files.exists(Paths.get(dinamikDosyaYolu)));
+        // Masaustumuzde theDelta.docx isimli bir dosya bulundugunu test edin
+        String dosyaYolu = System.getProperty("user.home") + "/Desktop/Thedelta.docx";
+        Assert.assertTrue(Files.exists(Paths.get(dosyaYolu)));
     }
 }
