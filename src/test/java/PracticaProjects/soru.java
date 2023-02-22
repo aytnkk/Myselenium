@@ -1,7 +1,6 @@
 package PracticaProjects;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.checkerframework.common.value.qual.StaticallyExecutable;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
