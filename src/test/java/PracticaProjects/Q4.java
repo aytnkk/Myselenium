@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class odev {
+public class Q4 {
     /* ...Exercise3...
     go to url : https://www.techlistic.com/p/selenium-practice-form.html
 

@@ -1,17 +1,14 @@
 package PracticaProjects;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.awt.*;
 import java.time.Duration;
-import java.util.List;
 
-public class odev3 {
+public class Q7 {
     // .......Exercise5........
     /*
     Navigate to website https://testpages.herokuapp.com/styled/index.html

@@ -1,4 +1,4 @@
-package day08_ExplicitlyWait_cookies_webtables;
+package day08_ExplicitlyWait_cookies_webtable;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -48,7 +48,7 @@ public class C04_Cookies extends TestBase {
       // 7- ismi skin olan cookie’yi silin ve silindigini test edin
         driver.manage().deleteCookieNamed("skin");
         System.out.println("========");
-        //olmayan bir elemeni test edemem,bunun yerine foreach ile eke aldigimiz her cookie 'yi ele alalim
+        //olmayan bir elemeni test edemem,bunun yerine foreach ile ele aldigimiz her cookie 'yi ele alalim
         //ismi skin olan varsa test failed olsun.
 
         cookiesSeti=driver.manage().getCookies();

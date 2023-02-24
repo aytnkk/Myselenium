@@ -1,4 +1,4 @@
-package day08_ExplicitlyWait_cookies_webtables;
+package day08_ExplicitlyWait_cookies_webtable;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
@@ -42,7 +42,7 @@ public class C01_ExplcitlyWait {
         //     Locate ve gorev tanimlamayi tek satirda yapiyoruz
         WebElement itsGoneElementi=
                 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[@id='message']")));
-        Assert.assertTrue(itsGoneElementi.isDisplayed());
+        Assert.assertTrue(itsGoneElementi.isDisplayed()); //visibilityOfElementLocated: elemebtin bu gorunur oldugunu gosteren methoddur
         driver.close();
     }
 
