@@ -32,5 +32,6 @@ public class C05_webtables extends TestBase {
             satirNo++;
 
         }
+
     }
 }
