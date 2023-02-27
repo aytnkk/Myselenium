@@ -7,7 +7,7 @@ import utilities.TestBase;
 
 import java.util.List;
 
-public class C06_WbTables extends TestBase {
+public class C06_WebTables extends TestBase {
     @Test
     public void test01() {
         // 1. “https://demoqa.com/webtables” sayfasina gidin
@@ -45,7 +45,7 @@ public class C06_WbTables extends TestBase {
 
         //  6. Tablodaki satir sayisini yazdirin
         List<WebElement>satirsayisi=driver.findElements(By.xpath("//div[@role='rowgroup']"));
-        System.out.println(((List<?>) satirsayisi).size());
+
 
         // 5. Tabloda kac tane bos olmayan cell (data) oldugunu yazdirin
         // 6. Tablodaki satir sayisini yazdirin
