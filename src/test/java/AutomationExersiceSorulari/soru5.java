@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utilities.TestBase;
 
-public class soru4 extends TestBase {
+public class soru5 extends TestBase {
 @Test
     public void test01(){
     //1. Launch browser

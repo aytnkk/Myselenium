@@ -1,1 +1,7 @@
-implicitlyWait:
+implicitlyWait:islem suresi ,bekleme suresinden fazla olabiliyor. ama biz implicity'ye
+belli bir sure verirsek o sure boyunca arar ve bulamazsa geri cikar,tarayiciyi kapatir ,beklemez.
+Her test icin verdigimiz sure kadar calisir. ayri ayri.
+
+
+
+

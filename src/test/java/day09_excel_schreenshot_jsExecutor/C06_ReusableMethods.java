@@ -1,25 +1,39 @@
 package day09_excel_schreenshot_jsExecutor;
 
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+import org.junit.Assert;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import utilities.ReusableMethods;
+import utilities.TestBase;
 
-import java.io.File;
 import java.io.IOException;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
-public class C06_ReusableMethods {
-    public static void tumSayfascreenshot(WebDriver driver) throws IOException {
+public class C06_ReusableMethods extends TestBase {
+    @Test
+    public void test01() throws IOException {
+        // amazon anasayfaya gidin
+        driver.get("https://www.amazon.com");
 
-        TakesScreenshot ts=(TakesScreenshot) driver;
-        LocalDateTime ldt=LocalDateTime.now();
-        DateTimeFormatter dtf=DateTimeFormatter.ofPattern("yyyyMMddhhmmss");
-        String dinamikDosyaYolu="target/tumSayfaSs" + ldt.format(dtf)+".png";
-        //dosya Yolu "target/tumSayfaSs2023022714813"
-        File tumsayfaSs=new File(dinamikDosyaYolu);
-        File geciciFile=ts.getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(geciciFile,tumsayfaSs);
+        // Nutella icin arama yapin
+        WebElement aramaKutusu= driver.findElement(By.id("twotabsearchtextbox"));
+        aramaKutusu.sendKeys("Nutella" + Keys.ENTER);
+
+        // Sonuclarin Nutella icerdigini test edin
+
+        String actualSonucYazisi = driver.findElement(By.xpath("//h1[@class='a-size-base s-desktop-toolbar a-text-normal']"))
+                .getText();
+
+        String expectedIcerik = "Nutella";
+
+        Assert.assertTrue(actualSonucYazisi.contains(expectedIcerik));
+
+        // ve rapora eklenmek icin tum sayfanin fotografini cekin
+
+        ReusableMethods.tumSayfaScreenshot(driver);
+
     }
+
+
 }

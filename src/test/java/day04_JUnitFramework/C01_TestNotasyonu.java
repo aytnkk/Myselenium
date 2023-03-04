@@ -10,7 +10,7 @@ import java.time.Duration;
 public class C01_TestNotasyonu {
     /*
         Framework : Ortak calisma cercevesi
-                    Hangi dosyalari nerede olusturacagimiz belirler ve boylece toplu calismayi kolaylastirir
+                    Hangi dosyalari nerede olusturacagimizi belirler ve boylece toplu calismayi kolaylastirir
                     Her framework, dosya duzeni olusturmanin yaninda,
                     islerimizi kolaylastiran yeni ozellikler sunmustur
 

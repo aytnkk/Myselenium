@@ -18,8 +18,7 @@ public class C04_webElements {
         //amazon anasayfaya gidin
         driver.get("https://www.amazon.com");
 
-        // arama kutusunu locate edip bir webelement olarak kaydedin
-        // id'si twotabsearchtextbox olan webelement seklinde locate edecegiz.
+
         /*
         driver'a webelementi tarif etme islemine locate ,bu tarifi yapabilmek icin kullanabilecegim
         degiskenlere de locator denir.
@@ -38,6 +37,8 @@ public class C04_webElements {
         --cssSelector
          */
 
+        // arama kutusunu locate edip bir webelement olarak kaydedin
+        // id'si twotabsearchtextbox olan webelement seklinde locate edecegiz.
        WebElement aramaKutusu= driver.findElement(By.id("twotabsearchtextbox")); // bu isleme locator denir
 
         //arama kutusuna "Nutella" yazip aratin.
